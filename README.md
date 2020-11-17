@@ -20,7 +20,8 @@ The purpose of this project was to get familiar with React Hooks and Context API
 
 Click the demo link or clone/download the repository on your local machine.
 Create a config.js file in api folder inside src folders. In config.js file write
-`export const apiKey = "YOUR_FLIKR_API_KEY";`
+`export const apiKeyFlickr = "YOUR_FLIKR_API_KEY";`
+`export const apiKeyGoogle = "YOUR_GOOGLE_API_KEY";`
 
 ##### Install dependencies
 

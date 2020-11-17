@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TooltipMap renders 1`] = `
+<ForwardRef(Tooltip)
+  destroyTooltipOnHide={false}
+  mouseEnterDelay={0.1}
+  mouseLeaveDelay={0.1}
+  overlay={
+    <div
+      className="tooltipMap-wrapper"
+    >
+      <div
+        className="tooltipMap-title"
+      >
+        titletest
+      </div>
+      <Map
+        className="tooltipMap-map"
+        onMount={[Function]}
+        options={
+          Object {
+            "center": Object {
+              "lat": 23,
+              "lng": 20,
+            },
+            "disableDefaultUI": true,
+            "zoom": 10,
+          }
+        }
+      />
+    </div>
+  }
+  placement="top"
+>
+  <span>
+    test
+  </span>
+</ForwardRef(Tooltip)>
+`;
