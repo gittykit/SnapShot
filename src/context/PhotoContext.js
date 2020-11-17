@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import axios from "axios";
-import { apiKey } from "../api/config";
+import { apiKeyFlickr } from "../api/config";
 export const PhotoContext = createContext();
 const promiseCache = {}
 
@@ -10,7 +10,7 @@ const PhotoContextProvider = props => {
   const runSearch = query => {
   if (!promiseCache[query]){
     promiseCache[query]= axios.get(
-      `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&has_geo=1&extras=geo&per_page=24&format=json&nojsoncallback=1`
+      `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKeyFlickr}&tags=${query}&has_geo=1&extras=geo&per_page=24&format=json&nojsoncallback=1`
     )
   }
   promiseCache[query]

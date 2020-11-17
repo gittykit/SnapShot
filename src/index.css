@@ -163,6 +163,11 @@ input {
   margin-right: auto;
 }
 
+.map {
+  width: 200px;
+  height: 200px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
