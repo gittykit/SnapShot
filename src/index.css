@@ -4,6 +4,10 @@ body {
   color: #3f4850;
 }
 
+body .rc-tooltip {
+  opacity: 1;
+}
+
 .forkongithub a {
   background: #000;
   color: #fff;
@@ -148,6 +152,33 @@ input {
 
 .photo-container .not-found {
   width: 100%;
+}
+
+.tooltipMap-map{
+  height: 260px;
+  width: 260px;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  background: white;
+  margin: 0 auto;
+}
+
+.tooltipMap-wrapper {
+  height: 320px;
+  width: 280px;
+  background: #373737;
+  opacity: 1;
+}
+
+.tooltipMap-title {
+ color: white;
+ font-size: 18px;
+ font-weight: bold;
+ text-align: center;
+ padding: 8px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 
 .loader {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PhotoContextProvider from "./context/PhotoContext";
-import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import Item from "./components/Item";
 import Search from "./components/Search";
@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <PhotoContextProvider>
-        <HashRouter basename="/SnapScout">
+        <BrowserRouter basename="/">
           <div className="container">
             <Route
               render={props => (
@@ -32,6 +32,11 @@ class App extends Component {
               <Route
                 exact
                 path="/"
+                render={() => <Redirect to="/mountain" />}
+              />
+              <Route
+                exact
+                path="/SnapShot"
                 render={() => <Redirect to="/mountain" />}
               />
 
@@ -51,7 +56,7 @@ class App extends Component {
               <Route component={NotFound} />
             </Switch>
           </div>
-        </HashRouter>
+        </BrowserRouter>
       </PhotoContextProvider>
     );
   }

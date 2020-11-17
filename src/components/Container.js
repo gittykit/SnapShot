@@ -10,9 +10,13 @@ const Container = ({ searchTerm }) => {
     // eslint-disable-next-line
   }, [searchTerm]);
 
+  if (loading) {
+    return <Loader />
+  }
+
   return (
     <div className="photo-container">
-      {loading ? <Loader /> : <Gallery data={images} />}
+      {<Gallery data={images} />}
     </div>
   );
 };
